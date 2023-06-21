@@ -25,7 +25,25 @@ font-weight: bold;
 
 
 }
+h3 {
+  color: rgba(0, 0, 0, 0.795);
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+.color-footerTarget{
+  color: grey;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.color-date{
+  color: orangered;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
 
 .event-grid {
   display: grid;

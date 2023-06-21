@@ -59,25 +59,20 @@ img{
   text-decoration: none;
 }
 
-/* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
-/* Cambiar a una columna para dispositivos móviles */
 .event-grid {
     grid-template-columns: 1fr;
 }
 
-/* Ajustar el tamaño de la imagen */
 img {
     height: auto;
     max-width: 100%;
 }
 
-/* Ajustar el tamaño del botón */
 .category-button {
     font-size: 1rem;
 }
 
-/* Ajustar el tamaño de la fuente de la pestaña */
 .tab-nav {
     font-size: 1.5rem;
 }

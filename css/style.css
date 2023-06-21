@@ -1,60 +1,79 @@
 body{
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
+  
 }
 
 button:hover {
-  color: black;
-  background-color: rgb(255, 255, 255);
-  border: solid 1px rgb(255, 255, 255);
-  padding: 1px;
-  border-radius: 0; 
-  border-top-left-radius: 4%; 
-  border-top-right-radius: 4%; 
+color: black;
+background-color: rgb(255, 255, 255);
+border: solid 1px rgb(255, 255, 255);
+padding: 1px;
+border-radius: 0; 
+border-top-left-radius: 4%; 
+border-top-right-radius: 4%; 
 
 }
 
 .category-button {
-  background-color: black;
-  border: none; 
-  padding: 0; 
-  cursor: pointer; 
-  color: white; 
-  font-size: 1.5rem;
-  font-weight: bold;
+background-color: black;
+border: none; 
+padding: 0; 
+cursor: pointer; 
+color: white; 
+font-size: 1.5rem;
+font-weight: bold;
 
 
 }
 
 
 .event-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
-  .event-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
+.event-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
 
 img{
-    height: 29.5%;
-  }
+  height: 29.5%;
+}
 
-  .tab-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7%;
-    list-style: none;
-    background-color: black;
-    padding: 3% 3% 0% 3%;
-    font-size: 2rem;
+.tab-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7%;
+  list-style: none;
+  background-color: black;
+  padding: 3% 3% 0% 3%;
+  font-size: 2rem;
 
 }
 
 .tab-nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+.event-grid {
+    grid-template-columns: 1fr;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.category-button {
+    font-size: 1rem;
+}
+
+.tab-nav {
+    font-size: 1.5rem;
+}
 }

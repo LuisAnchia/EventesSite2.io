@@ -9,9 +9,9 @@ export function renderEvents(events) {
     item.innerHTML = `
       <img src="${event.image}" alt="${event.title}">
       <h3>${event.title}</h3>
-      <p>${formatDate(event.date)}</p>
-      <p>${formatLocation(event.location)}</p>
-      <p>${formatPrice(event.price)}</p>
+      <p class="color-date">${formatDate(event.date)}</p>
+      <p class="color-footerTarget">${formatLocation(event.location)}</p>
+      <p class="color-footerTarget">${formatPrice(event.price)}</p>
     `;
     grid.appendChild(item);
   });

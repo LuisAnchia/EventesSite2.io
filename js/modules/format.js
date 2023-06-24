@@ -11,7 +11,7 @@ export function formatDate(timestamp) {
 }
 
 export function formatLocation(location) {
-  return `${location.place} • ${location.city}, ${location.state}`
+  return `${location.address} • ${location.city}, ${location.state}`
 }
 
 export function formatPrice(price) {

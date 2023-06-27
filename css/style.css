@@ -3,14 +3,21 @@ body{
   
 }
 
-button:hover {
-color: black;
-background-color: rgb(255, 255, 255);
-border: solid 1px rgb(255, 255, 255);
-padding: 1px;
-border-radius: 0; 
-border-top-left-radius: 4%; 
-border-top-right-radius: 4%; 
+.category-button {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(255, 255, 255);
+  padding: 1px;
+  border-radius: 0;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+.category-button:hover,
+.category-button.active {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 15% 20% 8% 20%;
 
 }
 
@@ -66,7 +73,7 @@ img{
   justify-content: center;
   gap: 7%;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   padding: 3% 3% 0% 3%;
   font-size: 2rem;
 

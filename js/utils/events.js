@@ -1,4 +1,4 @@
-import {formatDate, formatLocation, formatPrice} from './format.js'
+import {formatDate, formatLocation, formatPrice} from '../modules/format.js'
 
 export function renderEvents(events) {
   const grid = document.querySelector('.event-grid');

@@ -1,14 +1,5 @@
-import { fetchEvents } from './modules/api.js';
-import { renderEvents } from './modules/events.js';
-
-const eventCache = new Proxy({}, {
-  async get(target, category) {
-    if (!(category in target)) {
-      target[category] = await fetchEvents(category);
-    }
-    return target[category];
-  }
-});
+import { eventCache} from './modules/Proxy.js';
+import { renderEvents } from './utils/events.js';
 
 document.querySelector('.tab-nav').addEventListener('click', async function(event) {
   if (event.target.classList.contains('category-button')) {

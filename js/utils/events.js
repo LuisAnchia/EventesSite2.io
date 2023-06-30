@@ -1,4 +1,4 @@
-import {formatDate, formatLocation, formatPrice} from '../modules/format.js'
+import { formatDate, formatLocation, formatPrice } from '../modules/format.js'
 
 export function renderEvents(events) {
   const grid = document.querySelector('.event-grid');
@@ -20,9 +20,7 @@ export function renderEvents(events) {
   });
 }
 
-//<button class="favorite-button" data-event-id="${event.id}">Favorite</button>
-
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
   if (event.target.classList.contains('interested-button')) {
     const item = event.target.parentNode;
     const interestedButton = event.target;
@@ -37,7 +35,7 @@ document.addEventListener('click', function(event) {
     const changedMindButton = document.createElement('button');
     changedMindButton.textContent = "Changed your mind?";
     changedMindButton.classList.add('changed-mind-button');
-    changedMindButton.addEventListener('click', function() {
+    changedMindButton.addEventListener('click', function () {
       item.removeChild(message);
       item.removeChild(changedMindButton);
       if (interestedButton) {
@@ -45,5 +43,39 @@ document.addEventListener('click', function(event) {
       }
     });
     item.appendChild(changedMindButton);
+  }
+  if (event.target.classList.contains('going-button')) {
+    const item = event.target.parentNode;
+    const goingButton = event.target;
+    const interestedButton = item.querySelector('.interested-button');
+
+    if (goingButton) {
+      goingButton.style.display = 'none';
+    }
+
+    const message = document.createElement('p');
+    message.textContent = "You're going to an event";
+    message.classList.add('going-message');
+    item.appendChild(message);
+
+    const changedMindButton = document.createElement('p');
+    changedMindButton.textContent = "Changed your mind?";
+    changedMindButton.classList.add('changed-mind-button');
+    changedMindButton.addEventListener('click', function () {
+      item.removeChild(message);
+      item.removeChild(changedMindButton);
+      if (goingButton) {
+        goingButton.style.display = 'inline-block';
+      }
+      if (interestedButton) {
+        interestedButton.style.display = 'inline-block';
+      }
+    });
+
+    item.appendChild(changedMindButton);
+
+    if (interestedButton) {
+      interestedButton.style.display = 'none';
+    }
   }
 });

@@ -12,7 +12,12 @@ export function renderEvents(events) {
       <p class="color-date">${formatDate(event.date)}</p>
       <p class="color-footerTarget">${formatLocation(event.location)}</p>
       <p class="color-footerTarget">${formatPrice(event.price)}</p>
+      
+      <button class="interested-button" data-event-id="${event.id}">Interested</button>
+      <button class="going-button" data-event-id="${event.id}">Going!</button>
     `;
     grid.appendChild(item);
   });
 }
+
+//<button class="favorite-button" data-event-id="${event.id}">Favorite</button>

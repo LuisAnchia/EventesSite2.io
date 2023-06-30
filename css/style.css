@@ -22,16 +22,34 @@ body{
 }
 
 .category-button {
-background-color: black;
-border: none; 
-padding: 0; 
-cursor: pointer; 
-color: white; 
-font-size: 1.5rem;
-font-weight: bold;
-
+  background-color: black;
+  border: none; 
+  padding: 0; 
+  cursor: pointer; 
+  color: white; 
+  font-size: 1.5rem;
+  font-weight: bold;
 
 }
+
+.going-button,
+.interested-button {
+  background: #118ba7;
+  color: white;
+  text-decoration: none;
+  padding: 3% 14%;
+  border: none;
+  margin-right: 10px; 
+  transition: background 0.3s, border-color 0.3s; 
+}
+
+.going-button:hover,
+.interested-button:hover {
+  background: white; 
+  color: #118ba7;
+  border: 2px solid #118ba7;
+}
+
 h3 {
   color: rgba(0, 0, 0, 0.795);
   font-weight: bold;
@@ -64,7 +82,7 @@ h3 {
 }
 
 img{
-  height: 29.5%;
+  height: 27.5%;
 }
 
 .tab-nav{

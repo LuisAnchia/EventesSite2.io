@@ -43,6 +43,16 @@ body{
   transition: background 0.3s, border-color 0.3s; 
 }
 
+.arrowLeft{
+  color: white;
+  height: 20px;
+
+}
+
+.BackFirtsPage{
+  display: flex;
+}
+
 .going-button:hover,
 .interested-button:hover {
   background: white; 
@@ -68,6 +78,10 @@ h3 {
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+.feather-heart {
+  color: red;
+  height: 25%;
 }
 
 .event-grid {

@@ -67,6 +67,9 @@ function handleClick(event) {
     const goingButton = item.querySelector('.going-button');
     const newState = currentState.handleClick(item, interestedButton, goingButton);
     currentState = newState.state;
+    if (goingButton) {
+      goingButton.style.display = 'inline-block';
+    }
   }
   if (event.target.classList.contains('going-button')) {
     const item = event.target.parentNode;

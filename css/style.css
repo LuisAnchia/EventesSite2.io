@@ -1,5 +1,6 @@
 body{
   box-sizing: border-box;
+  background-color: rgb(238, 238, 238);
   
 }
 
@@ -16,7 +17,7 @@ body{
 .category-button:hover,
 .category-button.active {
   color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  background-color:rgb(238, 238, 238);
   padding: 15% 20% 8% 20%;
 
 }
@@ -102,10 +103,11 @@ h3 {
 .event-item {
   border: 1px solid #ccc;
   padding: 10px;
+  background-color: white;
 }
 
 img{
-  height: 27.5%;
+  width: 100%;
 }
 
 .tab-nav{

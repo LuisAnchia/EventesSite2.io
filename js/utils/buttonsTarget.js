@@ -74,6 +74,7 @@ function handleClick(event) {
     const interestedButton = item.querySelector('.interested-button');
     const newState = currentState.handleClick(item, goingButton, interestedButton);
     currentState = newState.state;
+    interestedButton.style.display = 'none';
   }
 }
 

@@ -16,6 +16,9 @@ const state = {
         item.removeChild(message);
         item.removeChild(changedMindButton);
         interestedButton.style.display = 'inline-block';
+        if (goingButton) {
+          goingButton.style.display = 'inline-block';
+        }
       });
       item.appendChild(changedMindButton);
       return {
@@ -23,6 +26,7 @@ const state = {
         message: message,
         changedMindButton: changedMindButton,
         button: interestedButton,
+        goingButton: goingButton, 
       };
     },
   },
@@ -53,6 +57,7 @@ const state = {
         message: message,
         changedMindButton: changedMindButton,
         button: goingButton,
+        interestedButton: interestedButton, 
       };
     },
   },
@@ -78,6 +83,23 @@ function handleClick(event) {
     const newState = currentState.handleClick(item, goingButton, interestedButton);
     currentState = newState.state;
     interestedButton.style.display = 'none';
+  }
+  if (event.target.classList.contains('changed-mind-button')) {
+    const item = event.target.parentNode;
+    const message = item.querySelector('.going-message');
+    const changedMindButton = event.target;
+    const originalButton = currentState.button;
+    const goingButton = currentState.goingButton; 
+    const interestedButton = currentState.interestedButton; 
+    item.removeChild(message);
+    item.removeChild(changedMindButton);
+    originalButton.style.display = 'inline-block';
+    if (goingButton) {
+      goingButton.style.display = 'inline-block';
+    }
+    if (interestedButton) {
+      interestedButton.style.display = 'inline-block';
+    }
   }
 }
 

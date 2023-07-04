@@ -27,7 +27,7 @@ const state = {
         changedMindButton: changedMindButton,
         button: interestedButton,
         goingButton: goingButton, 
-      };
+      };z
     },
   },
   going: {

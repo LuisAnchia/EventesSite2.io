@@ -178,20 +178,110 @@ img{
 }
 
 @media screen and (max-width: 768px) {
-.event-grid {
-    grid-template-columns: 1fr;
+  .event-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  img {
+      height: auto;
+      max-width: 100%;
+  }
+  
+  .category-button {
+    font-size: 0.8rem;
+  }
+  
+  .tab-nav {
+      font-size: 1.5rem;
+  }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .my-account-link {
+      top: 27px;
+      right: 20px;
+    }
+  
+    .back-to-events-link {
+      top: 27px;
+      left: 20px;
+    }
+  
+    .my-account-text,
+    .back-to-events-link span {
+      font-size: 70%;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .my-account-link {
+      top: 30px;
+      right: 30px;
+    }
+  
+    .back-to-events-link {
+      top: 30px;
+      left: 30px;
+    }
+  
+    .my-account-text,
+    .back-to-events-link span {
+      font-size: 125%;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1024px) {
+    .my-account-link {
+      top: 50px;
+      right: 40px;
+    }
+  
+    .back-to-events-link {
+      top: 30px;
+      left: 30px;
+    }
+  
+    .my-account-text,
+    .back-to-events-link span {
+      font-size: 150%;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+  .my-account-link .arrow-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .back-to-events-link .arrowLeft {
+    width: 16px;
+    height: 16px;
+  }
 }
 
-img {
-    height: auto;
-    max-width: 100%;
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .my-account-link .arrow-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .back-to-events-link .arrowLeft {
+    width: 24px;
+    height: 24px;
+  }
 }
 
-.category-button {
-    font-size: 1rem;
-}
+@media only screen and (min-width: 1024px) {
+  .my-account-link .arrow-icon {
+    width: 32px;
+    height: 32px;
+  }
 
-.tab-nav {
-    font-size: 1.5rem;
-}
+  .back-to-events-link .arrowLeft {
+    width: 32px;
+    height: 32px;
+  }
 }

@@ -222,7 +222,7 @@ tr {
 }
 
 /* Media query para pantallas móviles */
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   #calendar-container {
     max-width: 100%;
     font-size: 8px;

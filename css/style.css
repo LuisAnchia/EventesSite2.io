@@ -163,6 +163,10 @@ img{
   text-decoration: none;
 }
 
+a.back-to-events-link {
+  margin-top: 2%;
+}
+
 .back-to-events-link span {
   font-size: 1.5rem;
   font-family: sans-serif;
@@ -176,6 +180,111 @@ img{
   margin-right: 8px;
   fill: white;
 }
+
+.hidden {
+  display: none;
+}
+
+#calendar-container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar-table th,
+#calendar-table td {
+  padding: 5px;
+  text-align: center;
+}
+
+#calendar-table th {
+  font-weight: bold;
+}
+
+#calendar-table td {
+  border: 1px solid black;
+  color: black;
+}
+
+tr {
+  height: 100px;
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 480px) {
+  #calendar-container {
+    max-width: 100%;
+    font-size: 8px;
+  }
+
+  #calendar-table {
+    width: max-content;
+    white-space: nowrap;
+  }
+
+  #calendar-table th,
+  #calendar-table td {
+    padding: 2px;
+    min-width: 37px;
+  }
+
+  tr {
+    height: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .category-button {
+    font-size: 0.8rem;
+  }
+
+  .tab-nav {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .category-button {
+    font-size: 0.8rem;
+  }
+
+  .tab-nav {
+    font-size: 1.5rem;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .event-grid {

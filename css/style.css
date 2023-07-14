@@ -225,7 +225,7 @@ tr {
 @media (max-width: 480px) {
   #calendar-container {
     max-width: 100%;
-    font-size: 8px;
+    font-size: 10px;
   }
 
   #calendar-table {
